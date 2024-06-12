@@ -1,10 +1,6 @@
 const root = document.querySelector('.textconatiner');
 const addButton = document.querySelector('.cickbutton');
-
-// Load saved notes from local storage
 document.addEventListener('DOMContentLoaded', loadNotes);
-
-// Add a new note
 addButton.addEventListener('click', addNote);
 
 function addNote() {
@@ -16,7 +12,7 @@ function addNote() {
     textareachild.classList.add('textbox');
     newchild.appendChild(textareachild);
 
-    // Save note content on input
+
     textareachild.addEventListener('input', saveNotes);
 
     var img = document.createElement('img');
@@ -29,7 +25,6 @@ function addNote() {
         saveNotes();
     });
 
-    // Save the current state of notes
     saveNotes();
 }
 
@@ -53,14 +48,12 @@ function loadNotes() {
         textareachild.value = noteContent;
         newchild.appendChild(textareachild);
 
-        // Save note content on input
         textareachild.addEventListener('input', saveNotes);
 
         var img = document.createElement('img');
         img.src = "images/delete.png";
         newchild.appendChild(img);
 
-        // Remove note on click and save updated notes
         img.addEventListener('click', () => {
             newchild.remove();
             saveNotes();
