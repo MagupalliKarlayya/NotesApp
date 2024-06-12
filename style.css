@@ -1,0 +1,72 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+.conatiner{
+      margin-top: 50px;
+      margin-left: 150px;
+}
+.Notediv{
+  display: flex;
+  margin-bottom: 20px;
+}
+.Notediv img{
+  width: 60px;
+  height: 60px;
+}
+.Notediv h1{
+  padding-top: 10px;
+  color: white;
+}
+.cickbutton{
+  border: none;
+  outline: none;
+  background: #A020F0;
+  padding: 8px;
+  width: 160px;
+  border-radius: 50px;
+  display: flex;
+  color: white;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.cickbutton img{
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+}
+.cickbutton p{
+  padding-top: 3px;
+  padding-left: 8px;
+  font-size: 12px;
+}
+.writtennote{
+  position: relative;
+ width: 350px;
+ display: flex;
+}
+.writtennote textarea{
+  outline: none;
+  border: none;
+  margin: 10px 0;
+  width: 350px;
+  min-height: 120px;
+  background: white;
+  border-radius: 8px;
+  padding: 5px;
+}
+.writtennote img{
+  margin-left: -30px;
+  margin-top: 100px;
+  width: 20px;
+  height: 18px;
+  cursor: pointer;
+}
