@@ -19,7 +19,6 @@ function addNote() {
     img.src = "images/delete.png";
     newchild.appendChild(img);
 
-    // Remove note on click and save updated notes
     img.addEventListener('click', () => {
         newchild.remove();
         saveNotes();
